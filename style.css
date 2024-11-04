@@ -1,84 +1,108 @@
-/* Banner */
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do header */
+.navbar {
+    margin-bottom: 2rem;
+    background-color: #101935 !important;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-left: auto;
+}
+
+/* Estilo do banner */
 .banner {
-    background-image: url('banner-image.jpg');
+    background-image: url("./images/banner.jpg");
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 150px 0;
     text-align: center;
-    padding: 100px 0;
 }
 
-.banner-content h1 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* Sobre Nós */
-.sobre-nos h2 {
+.banner h1 {
     font-size: 2.5rem;
-    color: #101935;
     font-weight: bold;
 }
 
-.sobre-nos .subtitulo {
-    color: #4A4A4A;
+/* Estilo da seção Sobre Nós */
+.sobre-nos {
+    margin-bottom: 5rem;
 }
 
-.carousel .card {
-    padding: 20px;
-    max-width: 400px;
+.sobre-nos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.carousel .card h3 {
-    font-size: 1.5rem;
-    color: #101935;
+.subtitulo {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
 }
 
-/* Parceiros */
-.parceiros img {
-    margin: 0 10px;
-    width: 100px;
-    height: auto;
+/* Estilo do Carousel */
+.carousel-inner {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Footer */
-footer h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #F2FDFF;
+.carousel-item .card {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-footer p {
-    margin: 5px 0;
-    color: #9AD4D6;
-}
-
-
+/* Estilo da seção de parceiros */
 .parceiros-wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.parceiros-wrapper img {
+    height: 60px;
+    margin: 15px;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
     padding: 20px 0;
 }
 
-.logos-scroll {
-    display: flex;
-    align-items: center;
-    animation: scroll 20s linear infinite;
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.logos-scroll img {
-    width: 100px;
-    height: auto;
-    margin: 0 15px;
+footer a:hover {
+    text-decoration: underline;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+/* Estilo do subfooter */
+.subfooter {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
 
-    100% {
-        transform: translateX(-50%);
-    }
+.subfooter p {
+    margin: 0;
 }
