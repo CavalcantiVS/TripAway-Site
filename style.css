@@ -45,13 +45,14 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
-    /* Ajuste do padding para evitar esticar demais a imagem */
-    text-align: center;
+    padding: 60px 50px;
+    /* Ajuste do padding para adicionar espaço à esquerda */
+    text-align: left;
+    /* Alinhando o texto à esquerda */
     position: relative;
-    margin-top: -1px;
+    margin-top: -32px;
     /* Colando o banner no header */
-    height: 70vh;
+    height: 55vh;
     /* Ajustando a altura para exibir a asa do avião corretamente */
 }
 
@@ -62,7 +63,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     /* Adicionando uma camada de opacidade sobre a imagem */
     z-index: 1;
 }
@@ -70,11 +71,14 @@ body {
 .banner h1 {
     position: relative;
     z-index: 2;
-    font-size: 3rem;
+    font-size: 2.2rem;
     /* Ajuste do tamanho da fonte */
-    font-weight: bold;
-    max-width: 800px;
-    margin: 0 auto;
+    font-family: Playfair Display;
+    font-weight: 400;
+    max-width: 545px;
+    margin: 0;
+    text-align: center;
+    transform: translate(50px);
 }
 
 /* Estilo da seção Sobre Nós */
