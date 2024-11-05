@@ -1,6 +1,7 @@
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 /* Estilo do header */
@@ -12,32 +13,68 @@ body {
 .navbar-nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
 }
 
 .navbar-nav .nav-link {
-    margin: 0 20px;
-    color: white;
-    text-transform: uppercase;
+    color: white !important;
 }
 
-.navbar-nav .nav-item:last-child {
-    margin-left: auto;
+.navbar-nav .nav-item:not(.login) {
+    order: 1;
+    flex-grow: 1;
+    text-align: right;
 }
+
+.navbar-nav .nav-link:hover {
+    color: #FC6473 !important;
+}
+
 
 /* Estilo do banner */
 .banner {
-    background-image: url("./images/banner.jpg");
+    background-image: url("./images/Banner.png");
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 150px 0;
+    padding: 100px 0;
+    /* Ajuste do padding para evitar esticar demais a imagem */
     text-align: center;
+    position: relative;
+    margin-top: -1px;
+    /* Colando o banner no header */
+    height: 70vh;
+    /* Ajustando a altura para exibir a asa do avião corretamente */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adicionando uma camada de opacidade sobre a imagem */
+    z-index: 1;
 }
 
 .banner h1 {
-    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    /* Ajuste do tamanho da fonte */
     font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Estilo da seção Sobre Nós */
