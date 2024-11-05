@@ -81,31 +81,142 @@ body {
     transform: translate(50px);
 }
 
+
 /* Estilo da seção Sobre Nós */
 .sobre-nos {
     margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.sobre-nos h2 {
-    font-size: 2rem;
+.sobre-nos .text-section {
+    max-width: 50%;
+}
+
+.sobre-nos .titulo-principal {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #101935;
+    text-align: left;
     margin-bottom: 1rem;
 }
 
 .subtitulo {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #9AD4D6;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 /* Estilo do Carousel */
-.carousel-inner {
-    max-width: 600px;
-    margin: 0 auto;
+#carouselCards {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.carousel-item .card {
-    max-width: 600px;
-    margin: 0 auto;
+.carousel-inner {
+    overflow: hidden;
+    display: flex;
 }
+
+.carousel-item {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 0 0 48%;
+    /* Garantir que cada card ocupe cerca de metade da linha */
+    max-width: 48%;
+    display: flex;
+    align-items: stretch;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #101935;
+    color: #ffffff;
+    height: 100%;
+    /* Altura total da coluna */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Estilo dos controles do Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Garantir que as setas estejam acima dos elementos */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #101935;
+    border-radius: 50%;
+    padding: 20px;
+    /* Aumentar padding para melhorar visibilidade */
+    margin: 0 30px;
+    /* Espaçar mais as setas dos cards */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #fc6473;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #fc6473;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+
 
 /* Estilo da seção de parceiros */
 .parceiros-wrapper {
