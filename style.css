@@ -98,22 +98,41 @@ body {
     max-width: 50%;
 }
 
-.sobre-nos .titulo-principal {
+/* Personalização do Título Principal */
+.titulo-principal {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 900;
     color: #101935;
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 60px;
+    line-height: 1.2;
+    /* Ajustar o espaçamento entre linhas */
+
+}
+
+/* Personalização do Subtítulo */
+.subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    /* Aumentar o tamanho da fonte */
+    color: #9AD4D6;
+    /* Cor personalizada para o subtítulo */
+    text-align: left;
+    margin-bottom: 3rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.titulo-principal {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .subtitulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    color: #9AD4D6;
-    text-align: left;
-    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0.3, 0.3, 0.5, 0.6);
 }
+
 
 /* Estilo do Carousel */
 #carouselCards {
@@ -124,22 +143,25 @@ body {
 
 .carousel-inner {
     overflow: hidden;
-    display: flex;
 }
 
 .carousel-item {
-    width: 100%;
+    display: none;
+    transition: transform 0.5s ease-in-out;
 }
 
-.row {
-    width: 100%;
+.carousel-item.active {
     display: flex;
+}
+
+.carousel-item .row {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
 .col-md-6 {
     flex: 0 0 48%;
-    /* Garantir que cada card ocupe cerca de metade da linha */
     max-width: 48%;
     display: flex;
     align-items: stretch;
@@ -150,26 +172,32 @@ body {
     border-radius: 10px;
     background-color: #101935;
     color: #ffffff;
-    height: 100%;
-    /* Altura total da coluna */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    /* Garantir uma altura mínima para todos os cards */
+    height: 100%;
+    flex-grow: 1;
+    /* Garantir que todos os cards cresçam igualmente */
 }
 
 .card-body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card-title {
+    position: relative;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    max-width: 550px;
+    text-align: center;
     color: #ffffff;
     margin-bottom: 1rem;
 }
@@ -178,6 +206,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 /* Estilo dos controles do Carousel */
@@ -187,7 +217,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    /* Garantir que as setas estejam acima dos elementos */
 }
 
 .carousel-control-prev-icon,
@@ -195,9 +224,7 @@ body {
     background-color: #101935;
     border-radius: 50%;
     padding: 20px;
-    /* Aumentar padding para melhorar visibilidade */
     margin: 0 30px;
-    /* Espaçar mais as setas dos cards */
 }
 
 .carousel-control-prev-icon:hover,
@@ -214,7 +241,6 @@ body {
     width: 30px;
     height: 30px;
 }
-
 
 
 
