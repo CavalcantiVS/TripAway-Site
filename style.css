@@ -243,19 +243,62 @@ body {
 }
 
 
+/* Estilo do título "Principais Parceiros" */
+.titulo-parceiros {
+    font-family: 'Poppins', sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    color: #FC6473;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: -60px;
+    margin-bottom: 40px;
+    margin-top: 130px;
+}
 
 /* Estilo da seção de parceiros */
-.parceiros-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.parceiros-container {
+    background-color: #9AD4D6;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+    margin-bottom: 60px;
 }
 
-.parceiros-wrapper img {
-    height: 60px;
-    margin: 15px;
+.parceiros-slider {
+    display: flex;
+    gap: 40px;
+    animation: slide 20s linear infinite;
+    width: max-content;
+    /* Ajuste o tempo conforme necessário para tornar o movimento mais suave */
 }
+
+.parceiros-slider:hover {
+    animation-play-state: paused;
+    /* Pausa a animação ao passar o mouse, caso seja necessário */
+}
+
+.parceiros-slider::after {
+    content: "";
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.parceiros-slider img {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 
 /* Estilo do footer */
 footer {
