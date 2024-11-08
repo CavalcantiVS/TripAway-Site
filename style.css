@@ -252,7 +252,7 @@ body {
     text-align: left;
     margin-bottom: 1rem;
     margin-left: -60px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 130px;
 }
 
@@ -262,7 +262,7 @@ body {
     overflow: hidden;
     position: relative;
     padding: 1rem 0;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .parceiros-slider {
@@ -300,11 +300,36 @@ body {
 
 
 
+/* Estilo dos títulos no footer */
+.footer-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Estilo da linha separadora no footer */
+.footer-divider {
+    border: 1.5px solid #4A4A4A;
+    width: 100%;
+    max-width: 305px; /* Limita a largura máxima para manter o tamanho */
+    margin-bottom: 15px;
+    margin-left: 0; /* Alinha a linha separadora à esquerda */
+}
+
+/* Tópicos abaixo da linha alinhados à esquerda */
+footer .text-start ul {
+    text-align: left;
+    padding-left: 0;
+}
+
 /* Estilo do footer */
 footer {
-    background-color: #1a1a2e;
+    background-color: #101935;
     color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 footer a {
@@ -326,4 +351,9 @@ footer a:hover {
 
 .subfooter p {
     margin: 0;
+}
+
+/* Ajustes para os ícones do footer (usando Bootstrap Icons) */
+.bi-telephone, .bi-envelope {
+    margin-right: 8px;
 }
