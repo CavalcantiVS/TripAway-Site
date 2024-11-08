@@ -1,17 +1,17 @@
 /* Estilo do banner */
 .banner {
-    background-image: url("../images/Banner\ GC.png");
+    background-image: url("../images/Banner\GC.png");
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 60px 50px;
+    padding: 100px 190px;
     /* Ajuste do padding para adicionar espaço à esquerda */
     text-align: left;
     /* Alinhando o texto à esquerda */
     position: relative;
     margin-top: -32px;
     /* Colando o banner no header */
-    height: 55vh;
+    height: 60vh;
     /* Ajustando a altura para exibir a asa do avião corretamente */
 }
 
@@ -22,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     /* Adicionando uma camada de opacidade sobre a imagem */
     z-index: 1;
 }
@@ -30,12 +30,76 @@
 .banner h1 {
     position: relative;
     z-index: 2;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     /* Ajuste do tamanho da fonte */
     font-family: Playfair Display;
     font-weight: 400;
-    max-width: 545px;
+    max-width: 605px;
     margin: 0;
     text-align: center;
     transform: translate(50px);
 }
+
+
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* Estilo da barra de pesquisa personalizada */
+.custom-search-bar {
+    display: flex;
+    align-items: center;
+    width: 80%; /* Faz a barra ocupar quase toda a largura da tela */
+    max-width: none;
+    border: 2px solid #FC6473; /* Borda rosa */
+    border-radius: 0 25px 25px 0; /* Arredondado somente à direita */
+    overflow: hidden; /* Garante que os elementos internos sigam a borda */
+    height: 45px; /* Altura fixa para a barra de pesquisa */
+}
+
+/* Campo de input da barra de pesquisa */
+.custom-search-input {
+    flex: 1;
+    border: none; /* Remove bordas padrão */
+    outline: none; /* Remove o contorno ao focar */
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    color: #ffffff; /* Cor do texto */
+    background-color: #FC6473; /* Fundo rosa */
+    padding: 0 15px; /* Ajustar o padding horizontal para garantir que o input ocupe toda a altura */
+    height: 100%; /* O input ocupa toda a altura do container */
+}
+
+/* Botão de pesquisa */
+.custom-search-button {
+    background-color: #ffffff; /* Fundo branco do botão */
+    border: none; /* Remove borda padrão */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 25px 25px 0; /* Arredondado somente à direita */
+    height: 100%; /* O botão ocupa toda a altura do container */
+    padding: 0 15px; /* Remover padding vertical para garantir que o botão esteja alinhado */
+}
+
+/* Estilo do placeholder do campo de input */
+.custom-search-input::placeholder {
+    color: #ffffff; /* Define a cor do placeholder como branco */
+    opacity: 1; /* Define a opacidade do placeholder */
+}
+
+/* Ícone da lupa */
+.custom-search-button i {
+    color: #FC6473; /* Cor da lupa para combinar com o fundo do input */
+    font-size: 28px; /* Tamanho da lupa */
+}
+
+/* Hover no botão de pesquisa */
+.custom-search-button:hover {
+    background-color: #FC6473; /* Leve mudança de cor ao passar o mouse no botão */
+}
+
+/* Ícone da lupa no hover */
+.custom-search-button:hover i {
+    color: #ffffff; /* Define a cor da lupa como branca no hover */
+}   
