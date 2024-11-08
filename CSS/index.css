@@ -1,6 +1,6 @@
 /* Estilo do banner */
 .banner {
-    background-image: url("./images/Banner.png");
+    background-image: url("../images/Banner.png");
     background-size: cover;
     background-position: center;
     color: white;

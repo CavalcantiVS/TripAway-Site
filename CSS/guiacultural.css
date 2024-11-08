@@ -1,0 +1,41 @@
+/* Estilo do banner */
+.banner {
+    background-image: url("../images/Banner\ GC.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 50px;
+    /* Ajuste do padding para adicionar espaço à esquerda */
+    text-align: left;
+    /* Alinhando o texto à esquerda */
+    position: relative;
+    margin-top: -32px;
+    /* Colando o banner no header */
+    height: 55vh;
+    /* Ajustando a altura para exibir a asa do avião corretamente */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adicionando uma camada de opacidade sobre a imagem */
+    z-index: 1;
+}
+
+.banner h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.2rem;
+    /* Ajuste do tamanho da fonte */
+    font-family: Playfair Display;
+    font-weight: 400;
+    max-width: 545px;
+    margin: 0;
+    text-align: center;
+    transform: translate(50px);
+}
