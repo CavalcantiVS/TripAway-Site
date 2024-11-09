@@ -28,32 +28,6 @@ document.getElementById("search-button").addEventListener("click", function() {
                     // Exibir o modal
                     const resultadoModal = new bootstrap.Modal(document.getElementById('resultadoModal'));
                     resultadoModal.show();
-
-                    // Inicializar o mapa após o modal ser exibido
-                    resultadoModal._element.addEventListener('shown.bs.modal', () => {
-                        if (L.DomUtil.get('map') !== undefined) {
-                            L.DomUtil.get('map')._leaflet_id = null;
-                        }
-
-                        // API de geocodificação Nominatim para obter as coordenadas do CEP
-                        fetch(`https://nominatim.openstreetmap.org/search?format=json&postalcode=${cep}&country=Brazil`)
-                            .then(response => response.json())
-                            .then(locationData => {
-                                if (locationData.length > 0) {
-                                    const lat = locationData[0].lat;
-                                    const lon = locationData[0].lon;
-                                    const map = L.map('map').setView([lat, lon], 13); // Foco na localização do CEP
-                                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                                    }).addTo(map);
-                                } else {
-                                    console.error("Erro ao encontrar localização.");
-                                }
-                            })
-                            .catch(error => {
-                                console.error("Erro ao buscar localização geográfica:", error);
-                            });
-                    });
                 }
             })
             .catch(error => {
@@ -68,9 +42,11 @@ document.getElementById("search-button").addEventListener("click", function() {
 // Função para conversão de moeda
 document.getElementById("converter-moeda").addEventListener("click", function() {
     const valorBRL = document.getElementById("valor-brl").value;
-    const moedaDestino = "USD"; // Aqui você pode deixar dinâmico conforme o país encontrado
+    const moedaDestino = "BRL"; // Para simplificação, começamos com BRL
 
     if (valorBRL) {
+        // Buscar a moeda do país conforme o destino
+        const cidade = document.getElementById("endereco-cidade").innerText;
         const apiKey = "fca_live_3fHiejc3YcIQGf6EDRv2SoKMY0O85A6lBb3u98YB"; // Substitua pela sua chave da API
         const url = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}&currencies=${moedaDestino}&base_currency=BRL`;
 

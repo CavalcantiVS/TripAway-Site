@@ -1,3 +1,6 @@
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 /* Estilo do banner */
 .banner {
     background-image: url("../images/Banner\GC.png");
@@ -40,9 +43,6 @@
     transform: translate(50px);
 }
 
-
-/* Importando a fonte Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 /* Estilo da barra de pesquisa personalizada */
 .custom-search-bar {
@@ -130,6 +130,8 @@
     filter: invert(1); /* Torna o botão de fechar visível contra o fundo rosa */
 }
 
+
+
 /* Corpo do modal */
 .modal-body {
     padding: 20px; /* Mais espaço dentro do corpo do modal */
@@ -162,6 +164,22 @@
     margin-bottom: 10px; /* Espaço entre os itens */
     border-radius: 8px; /* Bordas arredondadas */
     color: #101935; /* Cor do texto */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo do resultado da conversão de moeda */
+#resultado-conversao {
+    background-color: #f2fdff;
+    border: 1px solid #4A90E2;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #101935;
 }
 
 /* Botão de fechar do modal */
@@ -177,9 +195,7 @@
     background-color: #e63950; /* Tom mais escuro ao passar o mouse */
 }
 
-
-
-
+/* Animação para o modal */
 .modal.fade .modal-dialog {
     transition: transform 0.3s ease-out;
     transform: translateY(-50px);
@@ -188,46 +204,19 @@
     transform: translateY(0);
 }
 
+/* Foco na barra de pesquisa personalizada */
 .custom-search-bar:focus-within {
     box-shadow: 0 0 10px #FC6473;
     border: 2px solid #FC6473;
 }
 
-#sugestoes-culturais li {
-    background-color: #f2fdff;
-    border: 1px solid #4A90E2;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    color: #101935;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-#sugestoes-culturais li i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
-    font-size: 1.5rem;
-    color: #4A90E2;
-}
-
-#resultado-conversao {
-    background-color: #f2fdff;
-    border: 1px solid #4A90E2;
-    padding: 15px;
-    border-radius: 12px;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #101935;
-}
-
+/* Estilo do título do modal */
 h1, .modal-title {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
 
+/* Botão de conversão de moeda */
 .btn-primary {
     background: linear-gradient(45deg, #FC6473, #E63950);
     border: none;
@@ -236,3 +225,4 @@ h1, .modal-title {
 .btn-primary:hover {
     background: linear-gradient(45deg, #E63950, #C12D3A);
 }
+
