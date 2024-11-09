@@ -71,168 +71,35 @@
 
 /* Botão de pesquisa */
 .custom-search-button {
-    background-color: #ffffff; 
-    border: none; 
+    background-color: #ffffff; /* Fundo branco do botão */
+    border: none; /* Remove borda padrão */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 25px 25px 0; 
-    height: 100%; 
-    padding: 0 15px; 
+    border-radius: 0 25px 25px 0; /* Arredondado somente à direita */
+    height: 100%; /* O botão ocupa toda a altura do container */
+    padding: 0 15px; /* Remover padding vertical para garantir que o botão esteja alinhado */
 }
 
 /* Estilo do placeholder do campo de input */
 .custom-search-input::placeholder {
-    color: #ffffff; 
+    color: #ffffff; /* Define a cor do placeholder como branco */
     opacity: 1; /* Define a opacidade do placeholder */
 }
 
 /* Ícone da lupa */
 .custom-search-button i {
-    color: #FC6473; 
-    font-size: 28px; 
+    color: #FC6473; /* Cor da lupa para combinar com o fundo do input */
+    font-size: 28px; /* Tamanho da lupa */
 }
 
 /* Hover no botão de pesquisa */
 .custom-search-button:hover {
-    background-color: #FC6473; 
+    background-color: #FC6473; /* Leve mudança de cor ao passar o mouse no botão */
 }
 
 /* Ícone da lupa no hover */
 .custom-search-button:hover i {
-    color: #ffffff; 
+    color: #ffffff; /* Define a cor da lupa como branca no hover */
 }   
-
-
-
-
-/* Estilo do modal */
-.modal-content {
-    border-radius: 15px; /* Bordas arredondadas no modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve para destacar o modal */
-}
-
-/* Cabeçalho do modal */
-.modal-header {
-    background-color: #FC6473; /* Fundo rosa do cabeçalho */
-    color: #ffffff; /* Texto branco no cabeçalho */
-    border-bottom: none; /* Remove a borda padrão do cabeçalho */
-}
-
-/* Título do modal */
-.modal-title {
-    font-weight: bold;
-}
-
-/* Botão de fechar do modal */
-.btn-close {
-    filter: invert(1); /* Torna o botão de fechar visível contra o fundo rosa */
-}
-
-/* Corpo do modal */
-.modal-body {
-    padding: 20px; /* Mais espaço dentro do corpo do modal */
-    background-color: #f9f9f9; /* Fundo claro para o corpo */
-    font-family: 'Roboto', sans-serif; /* Mantém a fonte Roboto */
-}
-
-/* Títulos das seções no modal */
-.modal-body h6 {
-    color: #FC6473; /* Cor do título das seções para combinar com a paleta do site */
-    margin-top: 15px;
-}
-
-/* Texto dentro do modal */
-.modal-body p {
-    color: #4A4A4A; /* Texto em um tom mais escuro para boa legibilidade */
-}
-
-/* Lista de sugestões culturais */
-#sugestoes-culturais {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0;
-    margin-top: 10px;
-}
-
-#sugestoes-culturais li {
-    background-color: #f2fdff; /* Fundo claro para destacar cada sugestão */
-    border: 1px solid #9ad4d6; /* Borda azul clara */
-    padding: 10px;
-    margin-bottom: 10px; /* Espaço entre os itens */
-    border-radius: 8px; /* Bordas arredondadas */
-    color: #101935; /* Cor do texto */
-}
-
-/* Botão de fechar do modal */
-.modal-footer .btn {
-    background-color: #FC6473; /* Fundo rosa */
-    color: #ffffff; /* Texto branco */
-    border: none;
-    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
-}
-
-/* Hover no botão de fechar do modal */
-.modal-footer .btn:hover {
-    background-color: #e63950; /* Tom mais escuro ao passar o mouse */
-}
-
-
-
-
-.modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out;
-    transform: translateY(-50px);
-}
-.modal.show .modal-dialog {
-    transform: translateY(0);
-}
-
-.custom-search-bar:focus-within {
-    box-shadow: 0 0 10px #FC6473;
-    border: 2px solid #FC6473;
-}
-
-#sugestoes-culturais li {
-    background-color: #f2fdff;
-    border: 1px solid #4A90E2;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    color: #101935;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-#sugestoes-culturais li i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
-    font-size: 1.5rem;
-    color: #4A90E2;
-}
-
-#resultado-conversao {
-    background-color: #f2fdff;
-    border: 1px solid #4A90E2;
-    padding: 15px;
-    border-radius: 12px;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #101935;
-}
-
-h1, .modal-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-}
-
-.btn-primary {
-    background: linear-gradient(45deg, #FC6473, #E63950);
-    border: none;
-}
-
-.btn-primary:hover {
-    background: linear-gradient(45deg, #E63950, #C12D3A);
-}
