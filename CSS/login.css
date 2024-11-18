@@ -1,0 +1,52 @@
+/* Estilo do Modal de Login/Cadastro */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop {
+    backdrop-filter: blur(10px); /* Pode aumentar o valor para intensificar o efeito */
+    background-color: rgba(0, 0, 0, 0.2); /* Adiciona uma leve opacidade */
+}
+
+.modal-header {
+    background-color: #FC6473;
+    color: #ffffff;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.btn-close {
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.btn-primary {
+    background-color: #FC6473;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e85463;
+}
+
+#showRegisterForm, #showLoginForm {
+    color: #FC6473;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#showRegisterForm:hover, #showLoginForm:hover {
+    text-decoration: underline;
+}
