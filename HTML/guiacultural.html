@@ -8,7 +8,7 @@
   <title>TripAway</title>
   <!-- Link atualizado para o Bootstrap 5.0.2 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../global.css"/>
   <link rel="stylesheet" href="../CSS/guiacultural.css"/>
 </head>
@@ -45,6 +45,121 @@
         </button>
     </div>
 </div>
+
+<!-- Seção de Entretenimento e Cultura -->
+<section class="entretenimento-cultura my-5">
+  <div class="container">
+    <h2 class="text-center mb-4 explore-titulo">Explore o que há de mais incrível no destino!</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <!-- Card Passeios ao Ar Livre -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/PasseioArLivre.jpg" class="card-img-top" alt="Trilhas e Parques">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Passeios ao Ar Livre</h5>
+            <button class="btn btn-primary">Exibir mais</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card Eventos e Shows -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/Shows.jpg" class="card-img-top" alt="Show ao Vivo">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Eventos e Shows</h5>
+            <button class="btn btn-primary">Exibir mais</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card Gastronomia -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/Gastronomia.jpg" class="card-img-top" alt="Pratos Locais">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Gastronomia</h5>
+            <button class="btn btn-primary">Exibir mais</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card Museus e História -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../images/Museu.jpg" class="card-img-top" alt="Museu">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Museus e História</h5>
+            <button class="btn btn-primary">Exibir mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Seção de Dicas de Economia -->
+<section class="dicas-economia my-5 py-4">
+  <div class="container">
+    <h2 class="text-center mb-4 dicas-titulo">Dicas para Economizar Durante sua Viagem</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex align-items-center">
+        <i class="bi bi-geo-alt-fill me-3 dicas-icon"></i>
+        <span>Aproveite atrações gratuitas</span>
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <i class="bi bi-bicycle me-3 dicas-icon"></i>
+        <span>Use transporte público</span>
+      </li>
+      <li class="list-group-item d-flex align-items-center">
+        <i class="bi bi-calendar-check-fill me-3 dicas-icon"></i>
+        <span>Compre ingressos com antecedência</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Seção de Depoimentos -->
+<section class="depoimentos my-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Depoimentos dos Viajantes</h2>
+    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Depoimento 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex flex-column align-items-center text-center">
+            <img src="../images/JoãoFt.avif" class="rounded-circle mb-3" alt="João" style="width: 100px; height: 100px; object-fit: cover;">
+            <p class="fw-bold mb-1">João, São Paulo</p>
+            <p class="text-muted">"Amei o passeio no parque central, super recomendo!"</p>
+          </div>
+        </div>
+        <!-- Depoimento 2 -->
+        <div class="carousel-item">
+          <div class="d-flex flex-column align-items-center text-center">
+            <img src="../images/MariaFt.avif" class="rounded-circle mb-3" alt="Maria" style="width: 100px; height: 100px; object-fit: cover;">
+            <p class="fw-bold mb-1">Maria, Rio de Janeiro</p>
+            <p class="text-muted">"Os eventos culturais foram maravilhosos, uma experiência incrível!"</p>
+          </div>
+        </div>
+        <!-- Depoimento 3 -->
+        <div class="carousel-item">
+          <div class="d-flex flex-column align-items-center text-center">
+            <img src="../images/Carlos.webp" class="rounded-circle mb-3" alt="Carlos" style="width: 100px; height: 100px; object-fit: cover;">
+            <p class="fw-bold mb-1">Carlos, Belo Horizonte</p>
+            <p class="text-muted">"A gastronomia local foi fantástica, recomendo experimentar tudo!"</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+</section>
 
 
  <!-- Footer -->

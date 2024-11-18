@@ -1,3 +1,6 @@
+/* Importando a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 /* Estilo do banner */
 .banner {
     background-image: url("../images/Banner\GC.png");
@@ -39,10 +42,6 @@
     text-align: center;
     transform: translate(50px);
 }
-
-
-/* Importando a fonte Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 /* Estilo da barra de pesquisa personalizada */
 .custom-search-bar {
@@ -103,3 +102,170 @@
 .custom-search-button:hover i {
     color: #ffffff; /* Define a cor da lupa como branca no hover */
 }   
+
+
+/* Estilo da seção de Entretenimento e Cultura */
+.entretenimento-cultura {
+    padding: 50px 15px;
+    background-color: #f9f9f9; /* Fundo claro para destacar os cards */
+}
+
+
+/* Cards de atividades culturais */
+.card {
+    border: none; /* Remover bordas para um visual mais clean */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Garantir que o conteúdo fique dentro dos limites */
+}
+
+.card img {
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Ajuste para cobrir todo o espaço */
+}
+
+/* Estilo para as imagens dos cards */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorcer */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #FC6473; /* Aplicar a cor rosa padrão do site */
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #FC6473; /* Cor rosa dos botões */
+    border: none; /* Remover borda padrão */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e85463; /* Cor mais escura para hover */
+}
+
+/* Estilo para o título "Explore o que há de mais incrível no destino!" */
+.explore-titulo {
+    font-family: 'Poppins', sans-serif;
+    color: #101935;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve para dar destaque */
+    font-weight: bold;
+    letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+    transition: transform 0.3s ease-in-out; /* Efeito de transição suave */
+}
+
+.explore-titulo:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+
+/* Estilo para o título das dicas de economia */
+.dicas-titulo {
+    font-family: 'Poppins', sans-serif;
+    color: #101935;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Seção de Dicas de Economia - Visual mais impactante */
+.dicas-economia {
+    background: none;
+    background: linear-gradient(135deg, #FC6473, #101935);
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 50px 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dicas-titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Lista de dicas com visual mais atraente */
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Estilo dos ícones */
+.dicas-icon {
+    font-size: 2rem;
+    color: #9AD4D6;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+
+
+/* Estilo para a seção de depoimentos */
+.depoimentos {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.depoimentos h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #101935;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do carrossel de depoimentos */
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    border: 4px solid #FC6473; /* Borda ao redor das imagens para destacar */
+}
+
+.carousel-item p.fw-bold {
+    color: #101935;
+    font-size: 1.1rem;
+}
+
+.carousel-item p.text-muted {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* Estilo dos botões do carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
