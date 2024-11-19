@@ -1,6 +1,6 @@
 /* Estilo geral do modal */
 .modal-content {
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 40px; /* Bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o modal */
     border: none; /* Remover bordas */
 }
@@ -34,9 +34,11 @@
     background-color: #f9f9f9; /* Fundo claro */
 }
 
-/* Lista de atividades (checklist) */
-.list-group-item {
-    background-color: #ffffff; /* Fundo branco */
+/* Escopo específico para lista de atividades no modal */
+.modal .list-group-item {
+    background-color: #FC6473; /* Ajustar para um fundo ligeiramente mais escuro */
+    color: #ffffff; /* Alterar para uma cor de texto mais escura */
+    font-family: 'Poppins', sans-serif; /* Usar a fonte desejada */
     border: 1px solid #e6e6e6; /* Borda leve */
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px 15px; /* Espaçamento interno */
@@ -45,20 +47,27 @@
     align-items: center;
 }
 
-.list-group-item .form-check-input {
+/* Estilo ao passar o mouse (hover) nos itens da lista no modal */
+.modal .list-group-item:hover {
+    background-color: #e85463; /* Mudar o fundo quando o usuário passar o mouse */
+}
+
+/* Estilo para o checkbox no modal */
+.modal .form-check-input {
     transform: scale(1.2); /* Aumentar o tamanho do checkbox */
     cursor: pointer;
+    accent-color: #101935; /* Altera a cor dos checkboxes */
 }
 
 /* Botão dentro do modal */
-.btn-primary {
+.modal .btn-primary {
     background-color: #FC6473; /* Cor rosa padrão */
     border: none;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
-.btn-primary:hover {
+.modal .btn-primary:hover {
     background-color: #e85463; /* Cor mais escura no hover */
 }
 
@@ -69,4 +78,49 @@
     font-size: 1.25rem;
     color: #101935; /* Cor escura para destaque */
     margin-top: 15px;
+}
+
+
+
+
+/* Estilo para a seção de total e valor convertido */
+.modal .valor-total-section {
+    margin-top: 30px; /* Espaço acima da seção */
+    padding: 15px;
+    background-color: #f5f5f5; /* Fundo leve para destaque */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de valor total e valor convertido */
+.modal .valor-total-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #101935; /* Cor do título */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modal .valor-total-title i {
+    margin-right: 10px;
+    color: #FC6473; /* Cor do ícone */
+    font-size: 1.8rem;
+}
+
+/* Valor em si */
+.modal .valor-total,
+.modal .valor-convertido {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #101935; /* Cor dos valores */
+    margin-top: 5px;
+}
+
+/* Texto indicando carregamento */
+.modal .valor-convertido.loading {
+    color: #e85463; /* Cor para o texto 'Carregando...' */
+    font-style: italic;
 }
