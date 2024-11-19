@@ -1,0 +1,72 @@
+/* Estilo geral do modal */
+.modal-content {
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o modal */
+    border: none; /* Remover bordas */
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+    background-color: #FC6473; /* Cor rosa padrão do site */
+    color: #ffffff; /* Texto branco */
+    padding: 15px; /* Espaçamento interno */
+    border-bottom: none; /* Remover a borda inferior */
+}
+
+.modal-title {
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+    font-weight: bold;
+}
+
+/* Botão de fechar do modal */
+.btn-close {
+    color: #ffffff; /* Cor branca para o ícone de fechar */
+    opacity: 0.8;
+}
+
+.btn-close:hover {
+    opacity: 1; /* Aumentar a opacidade no hover */
+}
+
+/* Corpo do modal */
+.modal-body {
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Fundo claro */
+}
+
+/* Lista de atividades (checklist) */
+.list-group-item {
+    background-color: #ffffff; /* Fundo branco */
+    border: 1px solid #e6e6e6; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item .form-check-input {
+    transform: scale(1.2); /* Aumentar o tamanho do checkbox */
+    cursor: pointer;
+}
+
+/* Botão dentro do modal */
+.btn-primary {
+    background-color: #FC6473; /* Cor rosa padrão */
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e85463; /* Cor mais escura no hover */
+}
+
+/* Texto do total e valor convertido */
+#totalPricePasseio,
+#convertedPrice {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #101935; /* Cor escura para destaque */
+    margin-top: 15px;
+}

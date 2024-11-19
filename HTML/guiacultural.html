@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../global.css"/>
   <link rel="stylesheet" href="../CSS/guiacultural.css"/>
   <link rel="stylesheet" href="../CSS/login.css"/>
+  <link rel="stylesheet" href="../CSS/modalAtividades.css">
 </head>
 <body>
 
@@ -54,47 +55,82 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <!-- Card Passeios ao Ar Livre -->
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalPasseioArLivre">
           <img src="../images/PasseioArLivre.jpg" class="card-img-top" alt="Trilhas e Parques">
           <div class="card-body">
             <h5 class="card-title fw-bold">Passeios ao Ar Livre</h5>
-            <button class="btn btn-primary">Exibir mais</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPasseioArLivre">Exibir mais</button>
           </div>
         </div>
       </div>
       <!-- Card Eventos e Shows -->
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalEventosShows">
           <img src="../images/Shows.jpg" class="card-img-top" alt="Show ao Vivo">
           <div class="card-body">
             <h5 class="card-title fw-bold">Eventos e Shows</h5>
-            <button class="btn btn-primary">Exibir mais</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPasseioArLivre">Exibir mais</button>
           </div>
         </div>
       </div>
       <!-- Card Gastronomia -->
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalGastronomia">
           <img src="../images/Gastronomia.jpg" class="card-img-top" alt="Pratos Locais">
           <div class="card-body">
             <h5 class="card-title fw-bold">Gastronomia</h5>
-            <button class="btn btn-primary">Exibir mais</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPasseioArLivre">Exibir mais</button>
           </div>
         </div>
       </div>
       <!-- Card Museus e História -->
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#modalMuseusHistoria">
           <img src="../images/Museu.jpg" class="card-img-top" alt="Museu">
           <div class="card-body">
             <h5 class="card-title fw-bold">Museus e História</h5>
-            <button class="btn btn-primary">Exibir mais</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPasseioArLivre">Exibir mais</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- Modal Passeios ao Ar Livre -->
+<div class="modal fade" id="modalPasseioArLivre" tabindex="-1" aria-labelledby="modalPasseioArLivreLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPasseioArLivreLabel">Passeios ao Ar Livre</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Escolha suas atividades preferidas:</h6>
+        <ul class="list-group mb-4" id="checklistPasseio">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Trilha Guiada - $50
+            <input type="checkbox" class="form-check-input checklist-item" data-price="50">
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Passeio de Caiaque - $40
+            <input type="checkbox" class="form-check-input checklist-item" data-price="40">
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Piquenique no Parque - $20
+            <input type="checkbox" class="form-check-input checklist-item" data-price="20">
+          </li>
+        </ul>
+        <h5>Total: <span id="totalPricePasseio">$0</span></h5>
+        <h6>Valor Convertido:</h6>
+        <p id="convertedPrice">Carregando...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <!-- Seção de Dicas de Economia -->
@@ -281,5 +317,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../JS/login.js"></script>
     <script src="../JS/nacionalidade.js"></script>
+    <script src="../JS/modalAtividades.js"></script>
   </body>
 </html>
