@@ -16,4 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostra a mensagem na página
     const visitCountElement = document.getElementById('visitCount');
     visitCountElement.textContent = `Você já visitou esta página ${visitCount} vez(es).`;
+
+    // Adicionar evento ao botão para zerar a contagem
+    const resetButton = document.getElementById('resetVisitCount');
+    if (resetButton) {
+        resetButton.addEventListener('click', () => {
+            // Zerar a contagem no localStorage
+            localStorage.removeItem('visitCount');
+            // Atualizar a mensagem na página
+            visitCountElement.textContent = `Você já visitou esta página 0 vezes.`;
+        });
+    } else {
+        console.error('Botão de zerar contagem não encontrado.');
+    }
 });

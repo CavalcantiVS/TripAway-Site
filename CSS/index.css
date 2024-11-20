@@ -284,8 +284,12 @@
 
 
 
-#visitCount {
-    font-style: italic; /* Deixar a mensagem mais sutil */
-    color: #b0b0b0; /* Cor neutra para não chamar muita atenção */
-    font-size: 0.8rem; /* Um pouco menor do que o resto do texto */
+#resetVisitCount {
+    font-size: 0.9rem;
+    color: red; /* Use uma cor que contraste com o fundo do rodapé */
+    cursor: pointer;
+}
+
+#resetVisitCount:hover {
+    text-decoration: none;
 }
