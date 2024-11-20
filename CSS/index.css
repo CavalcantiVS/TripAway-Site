@@ -279,3 +279,13 @@
         transform: translateX(-50%);
     }
 }
+
+
+
+
+
+#visitCount {
+    font-style: italic; /* Deixar a mensagem mais sutil */
+    color: #b0b0b0; /* Cor neutra para não chamar muita atenção */
+    font-size: 0.8rem; /* Um pouco menor do que o resto do texto */
+}
