@@ -5,14 +5,10 @@
     background-position: center;
     color: white;
     padding: 60px 50px;
-    /* Ajuste do padding para adicionar espaço à esquerda */
     text-align: left;
-    /* Alinhando o texto à esquerda */
     position: relative;
     margin-top: -32px;
-    /* Colando o banner no header */
     height: 55vh;
-    /* Ajustando a altura para exibir a asa do avião corretamente */
 }
 
 .banner::before {
@@ -23,7 +19,6 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    /* Adicionando uma camada de opacidade sobre a imagem */
     z-index: 1;
 }
 
@@ -31,7 +26,6 @@
     position: relative;
     z-index: 2;
     font-size: 2.2rem;
-    /* Ajuste do tamanho da fonte */
     font-family: Playfair Display;
     font-weight: 400;
     max-width: 545px;
@@ -39,7 +33,6 @@
     text-align: center;
     transform: translate(50px);
 }
-
 
 /* Estilo da seção Sobre Nós */
 .sobre-nos {
@@ -67,31 +60,73 @@
     margin-bottom: 1.5rem;
     margin-top: 60px;
     line-height: 1.2;
-    /* Ajustar o espaçamento entre linhas */
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Personalização do Subtítulo */
 .subtitulo {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    /* Aumentar o tamanho da fonte */
     color: #9AD4D6;
-    /* Cor personalizada para o subtítulo */
     text-align: left;
     margin-bottom: 3rem;
     font-style: italic;
     line-height: 1.5;
-}
-
-.titulo-principal {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-.subtitulo {
     text-shadow: 1px 1px 3px rgba(0.3, 0.3, 0.5, 0.6);
 }
 
+/* Estilo do Modal de Login/Cadastro */
+.modal-content {
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background-color: #FC6473;
+    color: #ffffff;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.btn-close {
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.btn-primary {
+    background-color: #FC6473;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e85463;
+}
+
+#showRegisterForm, #showLoginForm {
+    color: #FC6473;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#showRegisterForm:hover, #showLoginForm:hover {
+    text-decoration: underline;
+}
 
 /* Estilo do Carousel */
 #carouselCards {
@@ -102,11 +137,12 @@
 
 .carousel-inner {
     overflow: hidden;
+    padding: 1rem; /* Ajustar o carrossel para que os cards fiquem bem distribuídos */
 }
 
 .carousel-item {
     display: none;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease;
 }
 
 .carousel-item.active {
@@ -114,6 +150,7 @@
 }
 
 .carousel-item .row {
+    gap: 0.5rem; /* Ajuste do espaçamento entre os cards */
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -126,6 +163,7 @@
     align-items: stretch;
 }
 
+/* Estilo dos Cards */
 .card {
     border: none;
     border-radius: 10px;
@@ -137,10 +175,8 @@
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-height: 400px;
-    /* Garantir uma altura mínima para todos os cards */
     height: 100%;
     flex-grow: 1;
-    /* Garantir que todos os cards cresçam igualmente */
 }
 
 .card-body {
@@ -172,33 +208,28 @@
 /* Estilo dos controles do Carousel */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
+    width: 2.5rem; /* Aumentar a largura do botão para acomodar uma seta mais larga */
+    height: 2.5rem; /* Altura igual à largura para manter o círculo */
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%; /* Garantir que o botão seja circular */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #fc6473; /* Cor de fundo ao passar o mouse */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #101935;
-    border-radius: 50%;
-    padding: 20px;
-    margin: 0 30px;
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: #fc6473;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #fc6473;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 30px;
-    height: 30px;
+    width: 2.0rem; /* Aumentar a largura do ícone para deixá-la mais visível */
+    height: 1.0rem; /* Aumentar um pouco a altura para manter a proporcionalidade */
+    background-size: 100%; /* Garantir que o ícone preencha o fundo do elemento */
 }
 
 
@@ -229,18 +260,10 @@
     gap: 40px;
     animation: slide 20s linear infinite;
     width: max-content;
-    /* Ajuste o tempo conforme necessário para tornar o movimento mais suave */
 }
 
 .parceiros-slider:hover {
     animation-play-state: paused;
-    /* Pausa a animação ao passar o mouse, caso seja necessário */
-}
-
-.parceiros-slider::after {
-    content: "";
-    flex: 0 0 auto;
-    width: 100%;
 }
 
 .parceiros-slider img {

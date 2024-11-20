@@ -50,3 +50,42 @@
 #showRegisterForm:hover, #showLoginForm:hover {
     text-decoration: underline;
 }
+
+/* Ajuste do espaçamento entre os cards */
+.carousel .row {
+    gap: 1rem; /* Ajuste para aproximar os cards */
+}
+
+/* Reposicionar as setas do carrossel para fora dos cards */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 0;
+    z-index: 2;
+}
+
+.carousel-control-prev {
+    left: -3rem;
+}
+
+.carousel-control-next {
+    right: -3rem;
+}
+
+/* Estilo dos Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,133 @@
+<div class="modal fade" id="modalEventosShows" tabindex="-1" aria-labelledby="modalEventosShowsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEventosShowsLabel" style="font-family: 'Poppins', sans-serif; color: #ffffff;">Eventos e Shows</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6 style="font-family: 'Poppins', sans-serif; color: #101935; font-size: 18px; text-align: center;">Descubra os melhores eventos e shows ao redor do mundo:</h6>
+          <div class="accordion" id="accordionEventosShows">
+            <!-- Evento 1: Tomorrowland -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTomorrowland">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTomorrowland" aria-expanded="true" aria-controls="collapseTomorrowland" style="font-family: 'Poppins', sans-serif; color: #101935;">
+                  Tomorrowland, Bélgica
+                </button>
+              </h2>
+              <div id="collapseTomorrowland" class="accordion-collapse collapse show" aria-labelledby="headingTomorrowland" data-bs-parent="#accordionEventosShows">
+                <div class="accordion-body">
+                  <ul class="list-group mb-4" id="checklistTomorrowland">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Ingresso Pista - $300
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="300">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      VIP Experience - $800
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="800">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Camping Comfort - $150
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="150">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Passe Backstage - $500
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="500">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Transporte para o Evento - $50
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="50">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Evento 2: Festival de Glastonbury -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingGlastonbury">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGlastonbury" aria-expanded="false" aria-controls="collapseGlastonbury" style="font-family: 'Poppins', sans-serif; color: #101935;">
+                  Festival de Glastonbury, Reino Unido
+                </button>
+              </h2>
+              <div id="collapseGlastonbury" class="accordion-collapse collapse" aria-labelledby="headingGlastonbury" data-bs-parent="#accordionEventosShows">
+                <div class="accordion-body">
+                  <ul class="list-group mb-4" id="checklistGlastonbury">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Ingresso Geral - $250
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="250">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Área VIP - $600
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="600">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Camping Exclusivo - $200
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="200">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Tour dos Bastidores - $400
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="400">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Transporte até o Festival - $70
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="70">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Evento 3: Coachella -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingCoachella">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCoachella" aria-expanded="false" aria-controls="collapseCoachella" style="font-family: 'Poppins', sans-serif; color: #101935;">
+                  Coachella, EUA
+                </button>
+              </h2>
+              <div id="collapseCoachella" class="accordion-collapse collapse" aria-labelledby="headingCoachella" data-bs-parent="#accordionEventosShows">
+                <div class="accordion-body">
+                  <ul class="list-group mb-4" id="checklistCoachella">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Ingresso Weekend 1 - $400
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="400">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      VIP Experience - $1000
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="1000">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Camping Spot - $120
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="120">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Passe Backstage - $600
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="600">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Estacionamento Premium - $80
+                      <input type="checkbox" class="form-check-input checklist-item" data-price="80">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Seção Total e Valor Convertido -->
+          <div class="valor-total-section mt-4">
+            <div class="valor-total-title">
+              <i class="bi bi-currency-dollar"></i> <!-- Ícone de valor total -->
+              Total:
+            </div>
+            <div id="totalPriceEventosShows" class="valor-total">$0</div>
+  
+            <div class="valor-total-title mt-4">
+              <i class="bi bi-currency-exchange"></i> <!-- Ícone de valor convertido -->
+              Valor Convertido:
+            </div>
+            <div id="convertedPriceEventosShows" class="valor-convertido loading">Carregando...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
